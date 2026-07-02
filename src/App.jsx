@@ -8,6 +8,7 @@ import Merchandise from './components/Merchandise'
 import Partners from './components/Partners'
 import FAQ from './components/FAQ'
 import Footer from './components/Footer'
+import Synergy from './components/synergy'
 import CTA from './components/CTA'
 import Gallery from './components/Gallery'
 
@@ -24,6 +25,7 @@ function App() {
       <CTA />
       <Gallery />
       <FAQ />
+      <Synergy />
       <Footer />
     </>
   )

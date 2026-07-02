@@ -1,0 +1,95 @@
+/* ===== SYNERGY — READY. SET. SYNERGY? ===== */
+
+/* ── Section ─────────────────────────────────────────
+   The synergy template.png IS the background.
+   It contains:
+     • Torn cream paper top edge  → blends into FAQ section above
+     • Blue diagonal stripe zone  → content lives here
+     • Black torn grass bottom    → blends into footer below
+   We stretch it 100% x 100% so all edges render correctly.
+───────────────────────────────────────────────────── */
+.synergy-section {
+  position: relative;
+  /* Cream bg so torn top edge blends with page */
+  background-color: #f4f1ea;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* Min height matches typical viewport — image scales within */
+  min-height: 380px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Content: sits in the blue zone ─────────────── */
+.synergy-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  /* Push content down from the torn top edge (~15% of height) */
+  padding-top: 40px;
+  /* Keep above the black grass bottom (~20% of height) */
+  padding-bottom: 60px;
+  /* Horizontal safe zone so text doesn't overlap doodles */
+  padding-left: 120px;
+  padding-right: 120px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* ── Heading ─────────────────────────────────────── */
+.synergy-heading {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(22px, 5vw, 42px);
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  margin: 0;
+}
+
+/* ── Get Tickets Button ──────────────────────────── */
+.synergy-btn {
+  display: inline-block;
+  background-color: #f5a623;
+  color: #1a1a1a;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 14px 44px;
+  border-radius: 999px;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  box-shadow: 0 4px 18px rgba(245, 166, 35, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.synergy-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 28px rgba(245, 166, 35, 0.55);
+  background-color: #ffb83f;
+}
+
+.synergy-btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* ── Mobile adjustments ──────────────────────────── */
+@media (max-width: 480px) {
+  .synergy-content {
+    padding-left: 60px;
+    padding-right: 60px;
+    gap: 20px;
+  }
+
+  .synergy-btn {
+    padding: 12px 36px;
+    font-size: 15px;
+  }
+}
