@@ -1,0 +1,181 @@
+/* ===== PARTNERS SECTION ===== */
+
+.partners-section {
+  position: relative;
+  background: transparent; /* inherits full-page grainy background */
+  padding: 60px 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.partners-heading {
+  font-family: 'Outfit', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: #111111;
+  letter-spacing: -1px;
+  margin-bottom: 40px;
+  text-align: center;
+  line-height: 1;
+}
+
+/* ── Marquees Wrapper ──────────────────────────────── */
+.partners-marquees {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.partners-marquee-row {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  /* Soft fades at left/right edges */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+}
+
+/* ── Animation Tracks ──────────────────────────────── */
+.partners-marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: max-content;
+  will-change: transform;
+}
+
+/* Left-sliding marquee */
+.partners-marquee-track--left {
+  animation: slideLeft 25s linear infinite;
+}
+
+/* Right-sliding marquee */
+.partners-marquee-track--right {
+  animation: slideRight 25s linear infinite;
+}
+
+/* Pause on hover to allow interactive feel */
+.partners-marquee-row:hover .partners-marquee-track {
+  animation-play-state: paused;
+}
+
+/* ── Elements ─────────────────────────────────────── */
+.partners-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.partners-item--card {
+  width: 180px;
+  height: 80px;
+}
+
+.partners-item--card .partners-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.05));
+  transition: transform 0.3s ease;
+}
+
+.partners-item--card:hover .partners-img {
+  transform: scale(1.05);
+}
+
+.partners-item--deco {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners-item--deco .partners-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: spinSlow 12s linear infinite;
+}
+
+/* Alternating decorations spin in opposite directions/rates */
+.partners-marquee-row--right .partners-item--deco .partners-img {
+  animation: spinSlowReverse 16s linear infinite;
+}
+
+/* ── Animations ───────────────────────────────────── */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes spinSlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinSlowReverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* ── Mobile responsiveness ── */
+@media (max-width: 480px) {
+  .partners-heading {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  
+  .partners-item--card {
+    width: 140px;
+    height: 62px;
+  }
+  
+  .partners-item--deco {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .partners-marquee-track {
+    gap: 24px;
+  }
+}
