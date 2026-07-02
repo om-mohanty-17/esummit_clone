@@ -9,6 +9,7 @@ import Partners from './components/Partners'
 import FAQ from './components/FAQ'
 import Footer from './components/Footer'
 import CTA from './components/CTA'
+import Gallery from './components/Gallery'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Merchandise />
       <Partners />
       <CTA />
+      <Gallery />
       <FAQ />
       <Footer />
     </>
