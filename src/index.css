@@ -86,3 +86,10 @@ button {
 .text-pink { color: var(--color-pink); }
 .text-purple { color: var(--color-purple); }
 .text-yellow { color: var(--color-yellow); }
+
+/* ===== GLOBAL LINK RESET ===== */
+/* Prevent browser smart-text from coloring any inline links unexpectedly */
+p a, p a:visited, p a:hover {
+  color: inherit;
+  text-decoration: none;
+}

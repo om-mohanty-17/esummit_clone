@@ -1,0 +1,103 @@
+/* ===== FAQ SECTION ===== */
+
+.faq-section {
+  background-color: #f4f1ea;
+  padding: 48px 24px 60px;
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+/* ── Heading ──────────────────────────────────────── */
+.faq-heading {
+  font-family: 'Outfit', sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  color: #111111;
+  letter-spacing: -1px;
+  margin-bottom: 32px;
+  line-height: 1;
+}
+
+/* ── FAQ List ─────────────────────────────────────── */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Individual FAQ Item ──────────────────────────── */
+.faq-item {
+  /* top divider on every item */
+  border-top: 1px solid #c8c2b4;
+}
+
+.faq-item:last-child .faq-divider {
+  display: block;
+  height: 1px;
+  background: #c8c2b4;
+  margin-top: 0;
+}
+
+/* ── Question Button ──────────────────────────────── */
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.faq-question-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #111111;
+  line-height: 1.45;
+  flex: 1;
+}
+
+/* ── +/× Icon ─────────────────────────────────────── */
+.faq-icon {
+  font-size: 22px;
+  font-weight: 300;
+  color: #111111;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 24px;
+  text-align: center;
+  transition: transform 0.25s ease;
+}
+
+.faq-item--open .faq-icon {
+  transform: rotate(0deg);
+}
+
+/* ── Slide-down Answer ────────────────────────────── */
+.faq-answer-wrapper {
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.faq-answer {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #555555;
+  line-height: 1.6;
+  padding-bottom: 20px;
+}
+
+/* ── Bottom divider (last item) ───────────────────── */
+.faq-divider {
+  display: none;
+}
+
+.faq-item:last-child .faq-divider {
+  display: block;
+  height: 1px;
+  background: #c8c2b4;
+}
