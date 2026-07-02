@@ -8,11 +8,7 @@
 }
 
 .speakers-section {
-  background-color: #f5f2eb;
-  background-image: url('../assets/decorations/background.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
+  background: transparent;
   padding: 48px 20px 60px;
   max-width: 430px;
   margin: 0 auto;
