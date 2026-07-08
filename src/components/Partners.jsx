@@ -34,7 +34,7 @@ const Partners = () => {
   const infiniteRow2 = [...row2Elements, ...row2Elements, ...row2Elements, ...row2Elements]
 
   return (
-    <section className="partners-section" id="partners">
+    <section className="partners-section" id="testimonials">
       <h2 className="partners-heading">PARTNERS</h2>
       
       <div className="partners-marquees">

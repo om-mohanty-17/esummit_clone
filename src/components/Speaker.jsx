@@ -120,7 +120,7 @@ const SpeakerCard = ({ speaker }) => {
 
 const Speaker = () => {
   return (
-    <section className="speakers-section" id="speakers">
+    <section className="speakers-section" id="hi-res">
       <div className="speakers-header">
         <h2 className="speakers-heading">Voices That Matter</h2>
         <p className="speakers-subheading">2025 SPEAKERS</p>

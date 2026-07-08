@@ -7,7 +7,7 @@ import butterflyRight from '../assets/merchandise/butterfly_right.png'
 
 const Merchandise = () => {
   return (
-    <section className="merchandise-section" id="merchandise">
+    <section className="merchandise-section" id="benefits">
       {/* Decorative Left and Right Figures */}
       <img 
         src={figureLeft} 

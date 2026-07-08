@@ -11,7 +11,7 @@ const allPhotos = [...basePhotos, ...basePhotos]
 const Gallery = () => {
   return (
     // Background frame (torn edges + orange + leaf texture) applied via CSS
-    <section className="gallery-section" id="gallery">
+    <section className="gallery-section" id="process">
       <div className="gallery-content">
 
         {/* Section heading */}

@@ -7,7 +7,7 @@ import butterflyRight from '../assets/hero/butterfly_right.png'
 
 const Hero = () => {
   return (
-    <section className="hero-section" id="hero">
+    <section className="hero-section" id="home">
       {/* Perspective Grid Lines Background (Clean SVG) */}
       <div className="hero-grid-container" aria-hidden="true">
         <svg 

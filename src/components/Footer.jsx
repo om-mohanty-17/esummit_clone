@@ -65,7 +65,7 @@ const socialIcons = [
 
 const Footer = () => {
   return (
-    <footer className="footer-outer" id="footer">
+    <footer className="footer-outer" id="contact">
       <div className="footer-card">
         {/* ── Top: Logos + Nav ─────────────────────── */}
         <div className="footer-top">
