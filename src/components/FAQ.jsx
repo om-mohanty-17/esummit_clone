@@ -70,8 +70,8 @@ const FAQItem = ({ faq, isOpen, onToggle }) => {
 }
 
 const FAQ = () => {
-  // First item open by default (matching the design)
-  const [openId, setOpenId] = useState(1)
+  // All items collapsed by default (matching the target design)
+  const [openId, setOpenId] = useState(null)
 
   const handleToggle = (id) => {
     setOpenId((prev) => (prev === id ? null : id))

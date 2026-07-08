@@ -14,14 +14,10 @@ const Gallery = () => {
     <section className="gallery-section" id="gallery">
       <div className="gallery-content">
 
-        {/* Emoji stickers */}
-        <span className="gallery-emoji gallery-emoji--top-right" aria-hidden="true">😊</span>
-        <span className="gallery-emoji gallery-emoji--bottom-right" aria-hidden="true">😊</span>
-
         {/* Section heading */}
         <div className="gallery-header">
           <h2 className="gallery-heading">Pixels of Memory</h2>
-          <p className="gallery-subheading">Memories</p>
+          <p className="gallery-subheading">Hi-Res'24</p>
         </div>
 
         {/* Infinite auto-scroll marquee */}

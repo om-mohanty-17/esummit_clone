@@ -105,7 +105,7 @@ const SpeakerCard = ({ speaker }) => {
 
       <div className="speaker-info">
         <h3 className="speaker-name">
-          <span className="diamond">◆</span> Ansh Mehra
+          Ansh Mehra
         </h3>
         <p className="speaker-title">Design Consultant</p>
         <p className="speaker-bio">
